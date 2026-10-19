@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Types.fs" />
+    <Compile Include="Rng.fs" />
+    <Compile Include="Scenario.fs" />
+    <Compile Include="Weather.fs" />
+    <Compile Include="Events.fs" />
+    <Compile Include="Hydrology.fs" />
+    <Compile Include="Groundwater.fs" />
+    <Compile Include="Explain.fs" />
+    <Compile Include="Construction.fs" />
+    <Compile Include="Organization.fs" />
+    <Compile Include="Turn.fs" />
+    <Compile Include="Forecast.fs" />
+    <Compile Include="Evaluation.fs" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+    <GenerateProgramFile>false</GenerateProgramFile>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="InvariantTests.fs" />
+    <Compile Include="V03Tests.fs" />
+    <Compile Include="V10Tests.fs" />
+    <Compile Include="V11Tests.fs" />
+    <Compile Include="V12Tests.fs" />
+    <Compile Include="V13Tests.fs" />
+    <Compile Include="V14Tests.fs" />
+    <Compile Include="V15Tests.fs" />
+    <Compile Include="V16Tests.fs" />
+    <Compile Include="V17Tests.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.6.0" />
+    <PackageReference Include="xunit" Version="2.4.2" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.5">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="coverlet.collector" Version="6.0.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\WaterGame.Core\WaterGame.Core.fsproj" />
+    <ProjectReference Include="..\..\src\WaterGame.App\WaterGame.App.fsproj" />
+  </ItemGroup>
+
+</Project>

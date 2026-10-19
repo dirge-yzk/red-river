@@ -1,0 +1,6 @@
+bin/
+obj/
+*.bak
+*.user
+.vs/
+.idea/
